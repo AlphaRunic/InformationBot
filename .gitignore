@@ -1,8 +1,9 @@
 ## TypeScript
 *.bat
 *.cmd
-out
-node_modules
+*.tsbuildinfo
+/out
+/node_modules
 
 ## Environment
 .env
