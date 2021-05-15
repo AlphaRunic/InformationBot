@@ -1,0 +1,33 @@
+{
+  "name": "ripple",
+  "version": "1.0.0",
+  "description": "All-purpose TypeScript Discord bot",
+  "main": "Main.js",
+  "scripts": {
+    "start": "node --trace-warnings out/Main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaRunic/Ripple.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "ts",
+    "typescript"
+  ],
+  "author": "Runic & MissAries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlphaRunic/Ripple/issues"
+  },
+  "homepage": "https://github.com/AlphaRunic/Ripple#readme",
+  "dependencies": {
+    "bot-ts": "^0.2.1",
+    "dotenv": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2"
+  }
+}
