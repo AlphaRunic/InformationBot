@@ -1,18 +1,12 @@
-import { Client } from "bot-ts";
-import * as path from "path";
+import Discord from "discord.js";
+import { BotConfig as bot } from "./BotConfig";
 require("dotenv").config();
 
-const client = new Client({
-    commandPrefix: "::",
-    ownerId: "415233686758359051"
+const client = new Discord.Client({
+    fetchAllMembers: true
 });
 
-client.on("ready", () => console.log("Ripple is now online."));
+client.on("ready", () => console.log(`${bot.name} ${bot.version} is now online.`));
 client.on("error", (err) => console.warn(err));
-client.onInvalidCommand((msg) => {
-    msg.reply(`Invalid commmand "${msg.content}".`);
-});
 
-client.registerDefaultCommands();
-client.registerCommandsIn(path.join(__dirname, "Commands")).catch(console.error);
 client.login(process.env.LOGIN_TOKEN).catch(console.error);
