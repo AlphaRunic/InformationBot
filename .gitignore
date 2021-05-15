@@ -1,0 +1,8 @@
+## TypeScript
+*.bat
+*.cmd
+out
+node_modules
+
+## Environment
+.env
